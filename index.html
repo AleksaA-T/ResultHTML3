@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Практический результат уроков по HTML</title>
+    <style>
+        .header {
+            border-bottom: 5px solid green;
+        }
+        .color1 {
+            color: blue;
+        }
+        .line {
+            border-bottom: 3px solid palegreen;
+        }
+        .card {
+            background-color: #eee;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        .color2 {
+            color: red;
+        }
+
+        .color3 {
+            color: green;
+        }
+        .color_link {
+            color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <header id="header" class="header">
+        <h1>Практический результат уроков по HTML</h1>
+    </header>
+
+    <section>
+        <article class="color1">
+            <h2>Урок 1</h2>
+        </article>
+
+        <article>
+            <h3>Ссылки и фото</h3>
+
+            <a href="https://www.google.ru/">Google</a>
+            <br>
+            <a href="https://www.google.ru/" target="_blank">Google в новой вкладке</a>
+            <p>
+                <a href="01_text.html">Тег p -> параграф</a>
+            </p>
+
+            <h3>Картинка по URL</h3>
+
+            <img src="https://www.hse.ru/data/2021/02/01/1403981637/3iStock-1195523460.jpg" width="150" alt="Картинка робота">
+
+            <h3>Картинка - файл с компьютера</h3>
+            <img src="robot.jpg" width="150" alt="Картинка робота">
+        </article>
+    </section>
+
+    <hr class="line">
+
+    <section>
+        <article class="color1">
+            <h2>Урок 2</h2>
+        </article>
+
+        <article>
+            <h3>Списки</h3>
+
+            <ul type="square">
+                <li>Пункт 1</li>
+                <li>Пункт 2</li>
+                <li>Пункт 3</li>
+                <li>Пункт 4</li>
+                <li>Пункт 5</li>
+                <!-- type: circle, disc, square -->
+            </ul>
+        
+            <ol type="a">
+                <li>Пункт 1</li>
+                <li>Пункт 2</li>
+                <li>Пункт 3
+                    <ul>
+                        <li>Подпункт 1</li>
+                        <li>Подпункт 2</li>
+                        <li>Подпункт 3</li>
+                    </ul>
+                </li>
+                <li>Пункт 4</li>
+                <li>Пункт 5</li>
+                <!-- type: 1, I, A, a -->
+            </ol>
+        
+            <hr>
+            <p>
+                <h4>Этот список сделан по формуле для быстроты</h4>
+            </p>
+    
+            <ol>
+                <li>Пункт 1</li>
+                <li>Пункт 2</li>
+                <li>Пункт 3</li>
+                <li>Пункт 4</li>
+                <li>Пункт 5</li>
+            </ol> 
+            <!-- oi.li{Пункт $}*5 -> [TAB] -->
+        </article>
+    </section>
+
+    <hr class="line">
+
+    <section>
+        <article class="color1">
+            <h2>Урок 3</h2>
+        </article>
+
+        <article>
+            <h3>Таблица</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Наименование</th>
+                        <th>Объём</th>
+                        <th>Стоимость</th>
+                    </tr> 
+        
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Чай "Ахмад</td>
+                        <td>100 пак</td>
+                        <td>300 р</td>
+                    </tr> 
+                    <tr>
+                        <td>Кофе "Жокей"</td>
+                        <td>250 гр</td>
+                        <td>350 р</td>
+                    </tr>
+                    <tr>
+                        <td>Сок "Добрый"</td>
+                        <td>2 л</td>
+                        <td>100 р</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td><br>Описание таблицы</td>
+                    </tr>
+                </tfoot>      
+            </table>
+        </article>
+    </section>
+
+    <hr class="line">
+
+    <section>
+        <article class="color1">
+            <h2>Урок 4</h2>
+        </article>
+
+        <article>
+            <h3>Форма</h3>
+
+            <div>
+                <label for="text">Текст</label>
+                <input type="text" id="text" value="Текст по умолчанию">
+            </div>
+            <br>
+            <div>
+                <label for="text">Текст</label>
+                <input type="text" id="text" value="Текст только для чтения" readonly>
+            </div>
+            <br>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Введите вашу почту ">
+            </div>
+            <br>
+            <div>
+                <label for="password">Пароль</label>
+                <input type="password" id="password">
+            </div>
+            <br>
+            <div>
+                <label for="number">Число</label>
+                <input type="number" id="number" min="0" max="20">
+            </div>
+            <br>
+            <div>
+                <label for="range">Диапазон от 0 до 10<br>Шаг 2</label>
+                <input type="range" id="range" min="0" max="10" step="2">
+            </div>
+            <br>
+            <div>
+                <label for="date">Дата</label>
+                <input type="date" id="date">
+            </div>
+            <br>
+            <div>
+                <label for="color">Цвет</label>
+                <input type="color" id="color">
+            </div>
+            <br>
+            <div>
+                <label for="message">Сообщение</label>
+                <br>
+                <textarea id="message" cols="30" rows="5"></textarea>
+            </div>
+            <br>
+            <div>
+                <label for="sex">Ваш пол</label>
+                <select id="sex">
+                    <option value="male">Мужской</option>
+                    <option value="female">Женский</option>
+                    <option value="other" selected>Другое</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label>Количество работ</label>
+                <input type="radio" name="work"> 1-3
+                <input type="radio" name="work"> 4-6
+                <input type="radio" name="work"> 7-10
+                <input type="radio" name="work"> 10+
+            </div>
+            <br>
+            <div>
+                <label>Любимая еда</label>
+                <br>
+                <input type="checkbox" name="food"> Картошка
+                <br>
+                <input type="checkbox" name="food"> Овощи
+                <br>
+                <input type="checkbox" name="food"> Мясо
+                <br>
+                <input type="checkbox" name="food"> Тортик
+            </div>
+            <br>
+            <div>
+                <label for="file">Файл</label>
+                <input type="file" id="file">
+            </div>
+            <br>
+            <div>
+                <label for="file">Фото</label>
+                <input type="file" id="file" value="image">
+            </div>
+            <br>
+            <div>
+                <label for="tel">Телефон</label>
+                <input type="tel" id="tel">
+            </div>
+            <br>
+            <div>
+                <label for="url">Ссылка</label>
+                <input type="url" id="url">
+            </div>
+            <br>
+            <!-- <input type="submit" value="Отправить форму"> -> Ctrl+/ - комментарий-->
+    
+            <button type="submit">Отправить форму</button>
+    
+        </form>
+        </article>
+    </section>
+
+    <hr class="line">
+
+    <section>
+        <article class="color1">
+            <h2>Урок 5</h2>
+        </article>
+
+        <article>
+            <h3>Блочные и строковые элементы</h3>
+
+            <p style="border: 2px solid blue;">Lorem ipsum dolor sit, amet consectetur <strong>Voluptatum, nam ex. <br>Ex voluptatum 
+                sequi impedit</strong>, ipsa cupiditate accusantium! <br>Fugiat impedit <span style="border: 2px solid green;"> animi eos veritatis 
+                nostrum soluta assumenda</span> ducimus eius sequi?</p>
+        
+            <p style="border: 2px solid blue;">Lorem ipsum dolor sit amet stconsectetur adipisicing elit. Minus, dicta quos nostrum <br> 
+                accusantium necessitatibus <em> a dolorum quasi eum eos libero</em> maiores cum distinctio. <br>
+                Repudiandae iste tenetur aut culpa nihil.</p>
+        
+                <a href="#" style="border: 2px solid red;">Это ссылка</a>
+                <a href="#" style="border: 2px solid red;">Это ссылка 2</a>
+                <div style="border: 2px solid yellow;">
+                    <a href="#" style="border: 2px solid red;">Это ссылка 3</a>
+                </div>
+        </article>
+    </section>
+
+    <hr class="line">
+
+    <section>
+        <article class="color1">
+            <h2>Урок 6</h2>
+        </article>
+
+        <article>
+            <h3>Использование специальных тегов, id и классов</h3>
+        </article>
+
+        <article>
+            <header id="header" class="header">
+                <!--  тут вместо div можно писать header -->
+                <h4>Site</h4>
+            </header>
+
+            <p>Навигация (по сайту)</p>
+            
+            <nav  id="navigation">
+                <!-- id должен быть уникальный -->
+                <!-- для навигации - тег nav -->
+                <ul>
+                    <li><a href="#">Страница 1</a></li>
+                    <li><a href="#">Страница 2</a></li>
+                    <li><a href="#">Страница 3</a></li>
+                    <li><a href="#">Страница 4</a></li>
+                </ul>
+            </nav>
+            </т>
+        
+            <hr>
+        
+            <section>
+                <article id="block1" class="card">
+                    <!-- class можно дублировать, их может быть несколько -->
+                    <!-- тут вместо div -> article -->
+                    <h3 class="color2">Блок 1</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quis <br> 
+                        enim officiis magni reprehenderit fugiat.</p>
+                </article>
+        
+                <article id="block2" class="card">
+                    <h3>Блок 1</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quis <br> 
+                        enim officiis <span class="color3"> deserunt maiores molestiae</span> reprehenderit fugiat.</p>
+                </article>
+            </section>
+            <!-- section - объединяет блоки в секцию -->
+        
+            <hr>
+        
+            <footer id="footer">
+                <!--  тут вместо div можно писать footer -->
+                <h4>Соц. сети</h4>
+                <ul>
+                    <li><a href="#" class="color_link">Вконтакте</a></li>
+                    <li><a href="#" class="color_link">Телеграм</a></li>
+                    <li><a href="#" class="color_link">Инстаграм</a></li>
+                </ul>
+        
+                <aside></aside>
+                <!-- div для боковых менюшек -->
+            </footer>
+        </article>
+    </section>
+</body>
+
+</html>
